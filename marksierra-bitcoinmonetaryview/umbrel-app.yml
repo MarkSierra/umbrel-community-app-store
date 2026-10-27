@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: bitcoin
 name: Monetary View
-version: "0.3.2"
+version: "0.3.3"
 tagline: See how much spam your node stores
 icon: https://raw.githubusercontent.com/MarkSierra/umbrel-community-app-store/main/marksierra-bitcoinmonetaryview/icon.svg
 description: >-
@@ -38,10 +38,8 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  The dashboard can be installed as an app: your browser offers "Install" (on phones "Add to Home Screen")
-  and it then opens in its own window with its own icon. It still shows your node's live figures; nothing is
-  cached offline. Clicking "Biggest spam month" in Trends and records now opens that month as a custom range
-  on the History page.
+  A dashboard tab or installed app window that stays open now reloads itself once when the app has been
+  updated, so it no longer keeps showing the old version until you reload it by hand.
 submitter: Mark Sierra
 submission: https://github.com/MarkSierra/umbrel-community-app-store
 backupIgnore:
