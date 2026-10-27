@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: bitcoin
 name: Monetary View
-version: "0.3.0"
+version: "0.3.1"
 tagline: See how much spam your node stores
 icon: https://raw.githubusercontent.com/MarkSierra/umbrel-community-app-store/main/marksierra-bitcoinmonetaryview/icon.svg
 description: >-
@@ -38,11 +38,11 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  The dashboard now speaks English, German, Spanish, French and Polish: it follows your browser's language,
-  and the language menu in the header switches it. The translations are new, so please report mistakes via
-  the link in the footer. New on the overview: Trends and records, with spam in the last 30 days, this year
-  against last year, and the biggest spam block and month. Better layout on tablets and phones, and the page
-  no longer jumps when switching tabs.
+  "Transactions touched" is now called "Transactions with spam": the share of transactions a Monetary Node
+  changes (the figure is the same). The About page now explains this figure and Trends and records, lists the
+  five languages, and names both inscription envelope forms the rules detect. Figure tiles no longer show
+  colour squares (those are kept for chart legends), and the biggest spam block, which you can click, is now
+  the last tile with an arrow.
 submitter: Mark Sierra
 submission: https://github.com/MarkSierra/umbrel-community-app-store
 backupIgnore:
