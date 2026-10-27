@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: bitcoin
 name: Monetary View
-version: "0.3.1"
+version: "0.3.2"
 tagline: See how much spam your node stores
 icon: https://raw.githubusercontent.com/MarkSierra/umbrel-community-app-store/main/marksierra-bitcoinmonetaryview/icon.svg
 description: >-
@@ -38,11 +38,10 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  "Transactions touched" is now called "Transactions with spam": the share of transactions a Monetary Node
-  changes (the figure is the same). The About page now explains this figure and Trends and records, lists the
-  five languages, and names both inscription envelope forms the rules detect. Figure tiles no longer show
-  colour squares (those are kept for chart legends), and the biggest spam block, which you can click, is now
-  the last tile with an arrow.
+  The dashboard can be installed as an app: your browser offers "Install" (on phones "Add to Home Screen")
+  and it then opens in its own window with its own icon. It still shows your node's live figures; nothing is
+  cached offline. Clicking "Biggest spam month" in Trends and records now opens that month as a custom range
+  on the History page.
 submitter: Mark Sierra
 submission: https://github.com/MarkSierra/umbrel-community-app-store
 backupIgnore:
