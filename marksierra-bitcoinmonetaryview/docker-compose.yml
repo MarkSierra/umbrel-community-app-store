@@ -8,7 +8,7 @@ services:
       APP_PORT: 8338
 
   web:
-    image: ghcr.io/marksierra/bitcoinmonetaryview:0.2.2@sha256:70405d7606810362beae4a4683b9eef1467631197bb0d0fe79c0c957e9a5358e
+    image: ghcr.io/marksierra/bitcoinmonetaryview:0.2.3@sha256:118426449eaa62e2d07db8736de3414dbb931c2973da662ba91046165e515696
     user: "1000:1000"
     init: true
     restart: on-failure
