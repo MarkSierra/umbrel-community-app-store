@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: bitcoin
 name: Monetary View
-version: "0.2.3"
+version: "0.2.4"
 tagline: See how much spam your node stores
 icon: https://raw.githubusercontent.com/MarkSierra/umbrel-community-app-store/main/marksierra-bitcoinmonetaryview/icon.svg
 description: >-
@@ -38,9 +38,9 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Much faster restarts: the spent-output filter is now saved when the app stops and loaded back in seconds,
-  instead of being rebuilt for several minutes. The first start after this update still rebuilds it once.
-  Also rebuilt with the latest Python and Debian security updates.
+  When the spent-output filter has to be rebuilt (first start after an update, after a crash), this now takes
+  about half as long, and the scan checks spends a little faster. On phones the Connection page no longer
+  scrolls sideways. The first start after this update rebuilds the filter once.
 submitter: Mark Sierra
 submission: https://github.com/MarkSierra/umbrel-community-app-store
 backupIgnore:
