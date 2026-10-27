@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: bitcoin
 name: Monetary View
-version: "0.2.4"
+version: "0.2.5"
 tagline: See how much spam your node stores
 icon: https://raw.githubusercontent.com/MarkSierra/umbrel-community-app-store/main/marksierra-bitcoinmonetaryview/icon.svg
 description: >-
@@ -38,9 +38,9 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  When the spent-output filter has to be rebuilt (first start after an update, after a crash), this now takes
-  about half as long, and the scan checks spends a little faster. On phones the Connection page no longer
-  scrolls sideways. The first start after this update rebuilds the filter once.
+  The dashboard is now also available in German: it follows your browser's language, and the EN/DE button in
+  the header switches it. Fixed: connections to your node now close properly when the scanner restarts. The
+  image is now signed (build provenance) and built on a pinned base image.
 submitter: Mark Sierra
 submission: https://github.com/MarkSierra/umbrel-community-app-store
 backupIgnore:
