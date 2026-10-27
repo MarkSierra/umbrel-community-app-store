@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: bitcoin
 name: Monetary View
-version: "0.2.2"
+version: "0.2.3"
 tagline: See how much spam your node stores
 icon: https://raw.githubusercontent.com/MarkSierra/umbrel-community-app-store/main/marksierra-bitcoinmonetaryview/icon.svg
 description: >-
@@ -38,7 +38,9 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  First release in this community app store.
+  Much faster restarts: the spent-output filter is now saved when the app stops and loaded back in seconds,
+  instead of being rebuilt for several minutes. The first start after this update still rebuilds it once.
+  Also rebuilt with the latest Python and Debian security updates.
 submitter: Mark Sierra
 submission: https://github.com/MarkSierra/umbrel-community-app-store
 backupIgnore:
