@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: bitcoin
 name: Monetary View
-version: "0.3.3"
+version: "0.3.4"
 tagline: See how much spam your node stores
 icon: https://raw.githubusercontent.com/MarkSierra/umbrel-community-app-store/main/marksierra-bitcoinmonetaryview/icon.svg
 description: >-
@@ -16,6 +16,10 @@ description: >-
   Node would save, and how much spam sits in the current UTXO set. A whole-chain estimate appears within
   minutes; the exact figures follow as the history scan runs. You can look up any block, analyse a period of
   your choice and share a summary card.
+
+
+  Monetary View is an independent project, not affiliated with or endorsed by the Monetary Node project;
+  it uses its published spam rules unchanged.
 
 
   Strictly read-only: the app only reads blocks through a whitelist of read-only RPC calls, never changes
@@ -38,8 +42,9 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  A dashboard tab or installed app window that stays open now reloads itself once when the app has been
-  updated, so it no longer keeps showing the old version until you reload it by hand.
+  The About page, the description and the docs now state that Monetary View is an independent project, not
+  affiliated with or endorsed by the Monetary Node project, and that it uses its published spam rules
+  unchanged. The figures are unchanged.
 submitter: Mark Sierra
 submission: https://github.com/MarkSierra/umbrel-community-app-store
 backupIgnore:
