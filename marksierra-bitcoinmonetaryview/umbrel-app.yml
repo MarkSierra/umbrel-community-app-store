@@ -5,7 +5,7 @@ storage:
 category: bitcoin
 name: Monetary View
 version: "0.3.7"
-tagline: See how much spam your node stores
+tagline: See how much spam your Bitcoin node stores
 icon: https://raw.githubusercontent.com/MarkSierra/umbrel-community-app-store/main/marksierra-bitcoinmonetaryview/icon.svg
 description: >-
   Monetary View analyses the blocks and the UTXO set of your own Bitcoin node with the Monetary Node spam
