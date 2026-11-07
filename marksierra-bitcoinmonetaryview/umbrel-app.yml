@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: bitcoin
 name: Monetary View
-version: "0.3.7"
+version: "0.3.10"
 tagline: See how much spam your Bitcoin node stores
 icon: https://raw.githubusercontent.com/MarkSierra/umbrel-community-app-store/main/marksierra-bitcoinmonetaryview/icon.svg
 description: >-
@@ -42,9 +42,9 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Realistic remaining time at the start of the full scan (it showed hundreds of days), progress shown as % of
-  data, clearer latest-block cards (0.3 % instead of 0 %, spam vs. block size), a status bar that fits in
-  every language and on phones, and the technical settings list is folded away. No change to the figures.
+  The latest-block cards no longer cut off the spam and block size, and "Trends and records" always shows its
+  four tiles (one still waiting for the full scan says so). The dashboard's database connections are reused
+  and closed cleanly. No change to the figures.
 submitter: Mark Sierra
 submission: https://github.com/MarkSierra/umbrel-community-app-store
 backupIgnore:
