@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: bitcoin
 name: Monetary View
-version: "0.3.10"
+version: "0.3.11"
 tagline: See how much spam your Bitcoin node stores
 icon: https://raw.githubusercontent.com/MarkSierra/umbrel-community-app-store/main/marksierra-bitcoinmonetaryview/icon.svg
 description: >-
@@ -42,9 +42,7 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  The latest-block cards no longer cut off the spam and block size, and "Trends and records" always shows its
-  four tiles (one still waiting for the full scan says so). The dashboard's database connections are reused
-  and closed cleanly. No change to the figures.
+  Gentler on the disk: during the history scan the app now flushes its database to disk about 16 times less often, and on btrfs it stores the scan results without copy-on-write, which avoids heavy fragmentation. No change to the figures.
 submitter: Mark Sierra
 submission: https://github.com/MarkSierra/umbrel-community-app-store
 backupIgnore:
