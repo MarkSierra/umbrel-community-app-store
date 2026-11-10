@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: bitcoin
 name: Monetary View
-version: "0.3.12"
+version: "0.3.14"
 tagline: See how much spam your Bitcoin node stores
 icon: https://raw.githubusercontent.com/MarkSierra/umbrel-community-app-store/main/marksierra-bitcoinmonetaryview/icon.svg
 description: >-
@@ -24,7 +24,9 @@ description: >-
 
   Strictly read-only: the app only reads blocks through a whitelist of read-only RPC calls, never changes
   your node or its files, and makes no external requests. Works with Umbrel's Bitcoin Node and with Bitcoin
-  Knots. The dashboard is available in English, German, Spanish, French and Polish.
+  Knots. Once a week it asks your node for the size of its UTXO set; to answer, Bitcoin writes the part of
+  the UTXO set it holds in memory to disk. The dashboard is available in English, German, Spanish, French and
+  Polish.
 
 
   The scan results are rebuilt from your node if needed, so they are left out of Umbrel backups; your
@@ -42,7 +44,12 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  A browser that leaves while a page is loading no longer fills the log with error messages. Also in this update (0.3.11): during the history scan the app flushes its database to disk about 16 times less often, and on btrfs it stores the scan results without copy-on-write. No change to the figures.
+  Security fixes from a full code and security review: a damaged settings file no longer deletes your scan
+  results, malformed requests are refused, and blocks with duplicated transactions are refused, as Bitcoin Core does. Once a week
+  (no longer daily) the app asks your node for the size of its UTXO set; to answer, Bitcoin writes the part of
+  the UTXO set it holds in memory to disk. Faster dashboard on a fully scanned chain. After an interrupted
+  first pass, the latest blocks are scanned without gaps. Your scan results are kept. Full notes:
+  https://github.com/MarkSierra/BitcoinMonetaryView/releases/tag/v0.3.14
 submitter: Mark Sierra
 submission: https://github.com/MarkSierra/umbrel-community-app-store
 backupIgnore:
